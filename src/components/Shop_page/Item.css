@@ -1,0 +1,38 @@
+.main{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7%;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: #F4F5F7;
+    margin-bottom: 5%;
+    width: 15%;
+    border-radius: 20px;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+.text_item{
+    margin: 5% 8%;
+    font-family: Poppins;
+}
+
+.text_item h2{
+    font-size: 24px;
+}
+.text_item p{
+    font-size: 16px;
+}
+.text_item b{
+    font-size: 20px;
+}

@@ -4,22 +4,26 @@ import user from './img/user.svg';
 import search from './img/serch.svg';
 import like from './img/like.svg';
 import cart from './img/cart.svg';
+import { Link } from 'react-router-dom'
 function Header(){
 
     return(
         <div className="header">
-            <div className="logo_section">
+            <Link to="/" >
+                <div className="logo_section">
                 <img src={logo} alt="" />
                 <div className="text_logo">
-                    <h1> Furniro</h1>
+                <h1> Furniro</h1>
                 </div>
             </div>
+            </Link>
+
 
             <div className="nav">
-                <a href='#'>Home</a>
-                <a href='#'>Shop</a>
-                <a href='#'>About</a>
-                <a href='#'>Contact</a>
+                <Link to={'/'}>Home</Link>
+                <Link to={'/Shop_page'}>Shop</Link>
+                <Link to={'/'}>About</Link>
+                <Link to={'/'}>Contact</Link>
             </div>
 
             <div className="item_section">

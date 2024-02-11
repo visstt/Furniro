@@ -1,6 +1,10 @@
 import './Shop_page.css';
 import React from 'react';
-import Items from './Items';
+import Items from './Item/Items';
+import Header from '../Header/Header';
+import Nav from './Navigation/Nav_shop_page'
+import Section_inf from './Section_inf/Section_inf';
+import Footer from '../Footer/Footer'
 class Shop_page extends React.Component  {
     constructor(props) {
         super(props)
@@ -75,10 +79,15 @@ class Shop_page extends React.Component  {
     }
     
     render()
-    {
+    { 
+        
         return(
         <>
-            <Items items={this.state.items} />
+           <Header/>
+           <Nav/>
+           <Items items={this.state.items} /> 
+           <Section_inf/>
+            <Footer/>
         </>
     )}
 

@@ -76,8 +76,8 @@ class Shop_page extends React.Component  {
                 }
             ]
         }
-    }
-    
+        
+    }  
     render()
     { 
         
@@ -85,11 +85,11 @@ class Shop_page extends React.Component  {
         <>
            <Header/>
            <Nav/>
-           <Items items={this.state.items} /> 
+           <Items items={this.state.items}/> 
            <Section_inf/>
-            <Footer/>
+           <Footer/>
         </>
     )}
-
+    
 }
 export default Shop_page;

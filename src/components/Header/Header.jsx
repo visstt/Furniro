@@ -27,10 +27,10 @@ function Header(){
             </div>
 
             <div className="item_section">
-            <a href="#"><img src={user} alt="" /></a>
-            <a href="#"><img src={search} alt="" /></a>
-            <a href="#"><img src={like} alt="" /></a>
-            <a href="#"><img src={cart} alt="" /></a>
+            <Link to={"/"}><img src={user} alt="" /></Link>
+            <Link to={"/"}><img src={search} alt="" /></Link>
+            <Link to={"/"}><img src={like} alt="" /></Link>
+            <Link to={"/Cart_page"}><img src={cart} alt="" /></Link>
             </div>
         </div>
     )

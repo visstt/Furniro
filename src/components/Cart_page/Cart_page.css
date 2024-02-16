@@ -66,8 +66,12 @@
     font-size: 16px;
     margin-top: 10%;
     margin-bottom: 10%;
+    cursor: pointer;
 }
-
+.btn_cart_page:hover{
+    transition: 0.5s;
+    background-color: bisque;
+}
 .nav_cart{
     margin-top: 10%;
 }

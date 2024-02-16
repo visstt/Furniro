@@ -4,6 +4,8 @@
     height: 60vh;
     margin-top: 7%;
     margin-bottom: 7%;
+    display: flex;
+    justify-content: center;
 }
 
 .Section_3_container{
@@ -52,13 +54,26 @@
 .Section_3_images{
     height: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 5%;
+
 }
 
-@media (max-width: 1200px){
+
+@media (max-width: 1400px){
     .Section_3_container{
-        width:  100%;
+        width:  90%;
+
+        img{
+            width: 60%;
+            height: 70%;
+            
+        }
+        .Section_3_images{
+            align-items: center;
+        }
     }
+    
 }

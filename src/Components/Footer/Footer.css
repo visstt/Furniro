@@ -1,0 +1,26 @@
+.Footer{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+}
+.stripe{
+    border-bottom: solid 1px #D9D9D9;
+    margin-left: 10%;
+    width: 80%;
+}
+.main_footer{
+    display: flex;
+    margin-top: 1%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Poppins;
+}
+
+.main_footer h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.main_footer h3{
+    font-size: 16px;
+    font-weight: 500;
+}

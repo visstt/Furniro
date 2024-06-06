@@ -1,0 +1,21 @@
+.InfoContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    font-family: Poppins;
+
+    margin-top: 5%;
+    width: 50%;
+    margin-left: 10%;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+}
+.Product{
+    display: flex;
+    gap: 100%;
+}

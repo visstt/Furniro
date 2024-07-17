@@ -1,37 +1,102 @@
-.Section_inf{
-    display: flex;
-    align-items: center;
-    justify-content:  space-evenly;
-
+.Section_inf {
+    width: 100%;
     background-color: #FAF3EA;
-    height: 30vh;
-
-    margin-bottom:  3%;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.block_inf{
+.block_container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.block_inf {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    padding: 10px;
+    flex: 1 1 20%; /* allows the blocks to wrap and take available space */
 }
 
-.text_inf_block{
-    font-family: Poppins;
+.img_wrapper {
+    width: 50px; /* Adjust width as needed */
+    flex-shrink: 0; /* Prevent image from shrinking */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
 }
-.text_inf_block h1{
+
+.block_inf img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text_inf_block {
+    font-family: 'Poppins', sans-serif;
+    flex: 1; /* Fill remaining space */
+}
+
+.text_inf_block h1 {
     font-size: 25px;
     font-weight: 600;
+    margin-bottom: 5px;
 }
-.text_inf_block h2{
+
+.text_inf_block h2 {
     font-size: 20px;
     font-weight: 500;
     color: #898989;
 }
 
-@media(max-width: 1200px){
-    .Section_inf img{
-        height: 50%;
-        
+@media (max-width: 1200px) {
+    .text_inf_block h1 {
+        font-size: 22px;
+    }
+    .text_inf_block h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .mobile-slider-container {
+        width: 100%;
+        overflow: hidden; /* Ensure the slider does not overflow */
+    }
+
+    .slick-slide {
+        display: flex !important; /* Ensure slides are displayed */
+        justify-content: center;
+    }
+
+    .block_inf {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .img_wrapper {
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
+
+    .block_inf img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .img_wrapper {
+        width: 40px; /* Adjust width for smaller screens */
+    }
+
+    .text_inf_block h1 {
+        font-size: 20px;
+    }
+
+    .text_inf_block h2 {
+        font-size: 16px;
     }
 }

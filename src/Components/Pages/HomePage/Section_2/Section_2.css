@@ -1,54 +1,117 @@
-.Section_2{
-    display: flex;
-    flex-direction: column;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-.text_Section_2{
+.Section_2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 5%;
-    font-family: Poppins;
+    padding: 2rem;
 }
-.text_Section_2 h1{
+
+.text_Section_2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: Poppins, sans-serif;
+}
+
+.text_Section_2 h1 {
     font-size: 32px;
     font-weight: 700;
     color: #333333;
 }
-.text_Section_2 h2{
+
+.text_Section_2 h2 {
     font-size: 20px;
     font-weight: 400;
     color: #333333;
 }
 
-.img_container{
+.img_container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
-    gap: 3%;
-    margin-top: 5%;
 }
-.block{
+
+.block1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 300px;
+    text-align: center;
 }
 
-.block h1{
-    margin-top: 5%;
-    font-family: Poppins;
+.block2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
+}
+.block3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
+}
+.block1 img, .block2 img, .block3 img {
+    width: 100%;
+    height: auto;
+}
+
+.block1 h1,.block2 h1, .block3 h1 {
+    margin-top: 1rem;
+    font-family: Poppins, sans-serif;
     font-size: 24px;
     font-weight: 600;
     color: #333333;
 }
 
+@media (max-width: 1200px) {
+    .text_Section_2 h1 {
+        font-size: 28px;
+    }
+    .text_Section_2 h2 {
+        font-size: 18px;
+    }
+    .block h1 {
+        font-size: 22px;
+    }
+}
 
-@media (max-width: 1200px){
-    .block img{
-        width: 300px;
+@media (max-width: 1025px) {
+    .text_Section_2 h1 {
+        font-size: 24px;
+    }
+    .text_Section_2 h2 {
+        font-size: 16px;
+    }
+    .block1 h1, .block2 h1 {
+        font-size: 20px;
+    }
+    .block3{
+        display: none;
+    }
+    .img_container {
+        flex-direction: row;
+        align-items: center;
+    }
+    .block1, .block2 {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .text_Section_2 h1 {
+        font-size: 20px;
+    }
+    .text_Section_2 h2 {
+        font-size: 14px;
+    }
+    .block h1 {
+        font-size: 18px;
+    }
+    .block img {
+        width: 100%;
     }
 }

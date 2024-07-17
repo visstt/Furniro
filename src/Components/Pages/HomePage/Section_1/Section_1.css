@@ -20,6 +20,7 @@ html{
     margin-left: 50%;
     margin-top: 10%;
     border-radius: 30px;
+
 }
 
 .inner{
@@ -81,4 +82,47 @@ html{
     .btn_section_1{
         padding: 15px 60px ;
     }
+}
+@media (max-width: 800px) {
+    .inner h3{
+        font-size: 12px;  
+    }
+    .inner h1{
+        font-size: 32px; 
+    }
+    .inner h2{
+        font-size: 12px;
+    }
+    .btn_section_1{
+        padding: 15px 60px ;
+    }
+    .Section_1{
+        height: 60vh;
+    }
+}
+@media (max-width: 500px) {
+    .aside_block{
+        position: absolute;
+        background-color: #FFF3E3;
+        max-width: 70%;
+        max-height: 45%;
+        margin-left: 15%;
+        margin-top: 10%;
+        border-radius: 30px;
+    }
+    .inner h3{
+        font-size: 10px;  
+    }
+    .inner h1{
+        font-size: 30px; 
+    }
+    .inner h2{
+        font-size: 10px;
+    }
+    .btn_section_1{
+        padding: 10px 40px ;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
 }

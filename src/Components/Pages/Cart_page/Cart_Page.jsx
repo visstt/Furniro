@@ -1,15 +1,23 @@
-import Nav_cart_page from './Nav_cart_page'
-import Main_cart_page from './Main_cart_page'
-import Section_inf from '../ShopPage/Section_inf/Section_inf'
+import React from 'react';
 
-export default function Cart_page(){
-    return(
-        <div className="Cart_page">
-            <Nav_cart_page/>
-            <Main_cart_page/>
-            <div className="nav_cart">
-                <Section_inf/>
-            </div>
+const CartPage = ({ cart }) => {
+  if (!cart.length) {
+    return <p>Корзина пуста</p>;
+  }
+
+  return (
+    <div className="cart-page">
+      <h1>Корзина</h1>
+      {cart.map((product, index) => (
+        <div key={index} className="cart-item">
+          <img src={product.photo} alt={product.name} />
+          <h2>{product.name}</h2>
+          <p>{product.description}</p>
+          <p>Цена: {product.price} руб.</p>
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
+
+export default CartPage;

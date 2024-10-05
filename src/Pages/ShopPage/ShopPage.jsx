@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import './ShopPage.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';  // Подключаем стили
+import Navbar from './Navbar/Navbar';
+import Section_inf from './Section_inf/Section_inf';
 
 const ShopPage = () => {
   const dispatch = useDispatch();
@@ -31,14 +33,14 @@ const ShopPage = () => {
 
   return (
     <div className="shop-page">
-      <h1>Магазин</h1>
-      <Link to="/Cart_page">Перейти в корзину</Link>
+      <Navbar/>
       <div className="product-list">
         {products.map(product => (
           <ProductCard key={product.id} product={product} addToCart={addToCart} />  
         ))}
       </div>
-      <ToastContainer />  {/* Контейнер для уведомлений */}
+      <Section_inf/>
+      <ToastContainer />  
     </div>
   );
 };
